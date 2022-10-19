@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+.Card {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.Card__img {
+  width: 100%;
+  height: 290px;
+  background-image: url("../../images/image-product-desktop.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Card__body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap:25px;
+}
+
+.Card__body-subtitle {
+  font-size: small;
+  letter-spacing: 5px;
+}
+
+.Card__body-title {
+  font-family: "Fraunces";
+  line-height: 1.1;
+}
+
+.Card__body-description {
+  line-height: 1.6;
+  font-size: 15.5px;
+}
+
+.Card__body-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.Card__body-new-price {
+  font-family: "Fraunces";
+  font-size: 35px;
+  color: hsl(158, 36%, 37%);
+}
+
+.Card__body-old-price {
+  text-decoration: line-through;
+}
+
+@media only screen and (min-width: 1440px) {
+  /* For desktop: */
+  
+  .Card {
+    margin: 0;
+    width: 700px;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Card__img {
+    width: 50%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .Card__body {
+    width: 50%;
+    height: 100%;
+    gap: 25px;
+  }
+
+  .Card__body-title {
+    font-size: 40px;
+  }
+
+  .Card__body-description {
+    font-size: 18px;
+  }
+
+  .Card__body-new-price {
+    font-size: 40px;
+  }
+}
